@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FastAPI CRUD</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Student CRUD Using FastAPI (Python)</h1>
+
+      <!-- FORM -->
+      <div class="form">
+        <input type="text" id="name" placeholder="Name" />
+
+        <input type="number" id="age" placeholder="Age" />
+
+        <input type="text" id="course" placeholder="Course" />
+
+        <!-- Hidden input for update -->
+        <input type="hidden" id="studentId" />
+
+        <button onclick="saveStudent()">Save Student</button>
+      </div>
+
+      <!-- STUDENT LIST -->
+      <div id="studentList"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
